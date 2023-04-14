@@ -1,0 +1,24 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Background black
+$bg-c0-dark: #000;
+
+// header
+
+header {
+    background-color: #F5F5F5;
+    nav {
+        .container {
+            .nav-brand {
+                img {
+                    width: 300px !important ;
+                }
+            }
+        }
+    }
+}
