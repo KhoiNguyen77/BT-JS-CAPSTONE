@@ -27,5 +27,5 @@ let getProductForCarousel = axios({
   .catch((err) => {
     document.querySelector(
       ".owl-carousel"
-    ).innerHTML = `<h3 class="text-center mt-5">Oops ! Somethings Went Wrong <br> Please come back later !</h3>`;
+    ).innerHTML = `<h3 class="text-center mt-5">Oops ! Somethings Went Wrong <br> Please come back soon !</h3>`;
   });
