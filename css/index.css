@@ -63,56 +63,57 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
   width: 100%;
 }
 
-.carousel-slider .owl-carousel {
+.carousel-slider .lading-swiper {
   position: relative;
 }
-.carousel-slider .owl-carousel .item {
+.carousel-slider .lading-swiper .item {
   height: 500px;
   background-image: url(../images/image\ 6.png);
   background-position: center center;
   background-size: cover;
 }
-.carousel-slider .owl-carousel .item .container {
+.carousel-slider .lading-swiper .item .container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.carousel-slider .owl-carousel .item .container .product_img {
+.carousel-slider .lading-swiper .item .container .product_img {
   width: 50%;
 }
-.carousel-slider .owl-carousel .item .container .product_img img {
+.carousel-slider .lading-swiper .item .container .product_img img {
   width: 75%;
 }
-.carousel-slider .owl-carousel .item .container .product_detail {
+.carousel-slider .lading-swiper .item .container .product_detail {
   width: 50%;
   text-align: center;
 }
-.carousel-slider .owl-carousel .item .container .product_detail button {
+.carousel-slider .lading-swiper .item .container .product_detail button {
   padding: 15px;
   width: 150px;
   border-radius: 10px;
   background-color: orange;
   border: none;
   color: #fff;
+  font-size: 16px;
   transition: all 1s;
 }
-.carousel-slider .owl-carousel .item .container .product_detail button:hover {
+.carousel-slider .lading-swiper .item .container .product_detail button:hover {
   opacity: 0.5;
 }
-.carousel-slider .owl-carousel .owl-dots {
+.carousel-slider .lading-swiper .owl-dots {
   position: absolute;
   bottom: 0%;
   left: 46%;
 }
-.carousel-slider .owl-carousel .owl-dots .owl-dot.active span {
+.carousel-slider .lading-swiper .owl-dots .owl-dot.active span {
   background-color: #000 !important;
 }
-.carousel-slider .owl-carousel .owl-nav {
+.carousel-slider .lading-swiper .owl-nav {
   position: absolute;
   top: 40%;
   width: 100%;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-next {
+.carousel-slider .lading-swiper .owl-nav button.owl-next {
   border: 1px solid none;
   width: 100px;
   height: 100px;
@@ -120,32 +121,180 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
   right: 0%;
   font-size: 60px;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-next:hover {
+.carousel-slider .lading-swiper .owl-nav button.owl-next:hover {
   background: none;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-next:hover span {
+.carousel-slider .lading-swiper .owl-nav button.owl-next:hover span {
   transform: scale(1.5);
   color: black;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-next span {
+.carousel-slider .lading-swiper .owl-nav button.owl-next span {
   transition: all 0.5s;
   display: inline-block;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-prev {
+.carousel-slider .lading-swiper .owl-nav button.owl-prev {
   width: 100px;
   height: 100px;
   position: absolute;
   left: 0%;
   font-size: 60px;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-prev:hover {
+.carousel-slider .lading-swiper .owl-nav button.owl-prev:hover {
   background: none;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-prev:hover span {
+.carousel-slider .lading-swiper .owl-nav button.owl-prev:hover span {
   transform: scale(1.5);
   color: black;
 }
-.carousel-slider .owl-carousel .owl-nav button.owl-prev span {
+.carousel-slider .lading-swiper .owl-nav button.owl-prev span {
   transition: all 0.5s;
   display: inline-block;
+}
+
+.product .container .tittle {
+  font-size: 40px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.product .container .product-row .adidas-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .nike-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .vans-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .adidas-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .adidas-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .card-title {
+  font-size: 20px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .adidas-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
+}
+.product .container .product-row .nike-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .nike-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .nike-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .nike-row .col-12 .container .card .card-title {
+  font-size: 20px;
+}
+.product .container .product-row .nike-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .nike-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .nike-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .nike-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .nike-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
+}
+.product .container .product-row .vans-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .vans-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .vans-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .vans-row .col-12 .container .card .card-title {
+  font-size: 20px;
+}
+.product .container .product-row .vans-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .vans-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .vans-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .vans-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .vans-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
 }
