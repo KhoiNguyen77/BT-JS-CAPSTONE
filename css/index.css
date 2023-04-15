@@ -82,6 +82,7 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
 }
 .carousel-slider .lading-swiper .item .container .product_img img {
   width: 75%;
+  animation: float 6s ease-in-out infinite;
 }
 .carousel-slider .lading-swiper .item .container .product_detail {
   width: 50%;
@@ -297,4 +298,16 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
 .product .container .product-row .vans-row .col-12 .container .card .more-info a {
   text-decoration: none;
   color: #fff;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
