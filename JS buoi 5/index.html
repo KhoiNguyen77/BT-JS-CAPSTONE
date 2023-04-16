@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container" style="margin-bottom: 500px;">
+        <h3>Ví dụ về hàm</h3>
+        <div id="div-content">
+            content
+        </div>
+        <section id="section-content">
+            content
+        </section>
+        <article id="article">
+            content
+        </article>
+        <hr>
+        <h3>Ví dụ 2: Viết hàm thay đổi fontSize tăng giảm khi click vào nút button của thẻ sau i </h3>
+        <i style="font-size: 100px; color: red;" class="fa fa-home" id="home"></i>
+        <button id="tangFont" class="btn btn-dark m-2">+</button>
+        <button id="giamFont" class="btn btn-dark m-2">-</button>
+        <hr>
+        <h3>Bài tập 1: Tính điểm trung bình cho 2 khối A,C</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center text-danger">Khối A</h3>
+                <div class="form-group">
+                    <span>Toán</span>
+                    <input type="text" class="form-control" id="toan">
+                </div>
+                <div class="form-group">
+                    <span>Lý</span>
+                    <input type="text" class="form-control" id="ly">
+                </div>
+                <div class="form-group">
+                    <span>Hoá</span>
+                    <input type="text" class="form-control" id="hoa">
+                </div>
+                <div class="form-group my-2 alert alert-danger" id="diem-tb-khoi-a"></div>
+            </div>
+            <div class="col-md-6">
+                <h3 class="text-center text-danger">Khối C</h3>
+                <div class="form-group">
+                    <span>Văn</span>
+                    <input type="text" class="form-control" id="van">
+                </div>
+                <div class="form-group">
+                    <span>Sử</span>
+                    <input type="text" class="form-control" id="su">
+                </div>
+                <div class="form-group">
+                    <span>Địa</span>
+                    <input type="text" class="form-control" id="dia">
+                </div>
+                <div class="form-group my-2 alert alert-danger" id="diem-tb-khoi-c"></div>
+            </div>
+            <div class="text-center">
+                <button id="btnTinhDiem" class="btn btn-dark">Tính điểm</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

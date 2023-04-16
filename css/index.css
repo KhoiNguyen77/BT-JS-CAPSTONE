@@ -1,0 +1,325 @@
+.text-dark {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.text-primary, .carousel .container .about .description {
+  color: #2a73dd;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #f5f9fe;
+  padding: 15px 0;
+  box-shadow: 6px 6px 12px #e2ebfc, -6px -6px 12px #fff;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .container .logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #2a73dd;
+}
+.header .container .menu a {
+  color: #2a73dd;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 0px 20px;
+  position: relative;
+}
+.header .container .menu a::after {
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  background-color: #2a73dd;
+  content: "";
+  height: 3px;
+  transform: scaleX(0);
+}
+.header .container .menu a:hover {
+  color: #2a73dd;
+}
+.header .container .menu a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+  transition: all 1s;
+}
+
+.carousel {
+  background-color: #f5f9fe;
+  margin-top: 5px;
+  height: 600px;
+}
+.carousel .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.carousel .container .about .product-title {
+  font-size: 60px;
+  font-weight: 600;
+  color: #2a73dd;
+}
+.carousel .container .about .product-desc {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.5;
+}
+.carousel .container .about .description {
+  line-height: 1.5;
+  margin-top: 15px;
+}
+.carousel .container .about .btn-shop {
+  background: transparent;
+  padding: 13.5px 44px;
+  border: 2px solid #2a73dd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2a73dd;
+  cursor: pointer;
+  box-shadow: 0 3px 6px #c9d8f4;
+  letter-spacing: 0.03rem;
+  transition: all 0.5s;
+}
+.carousel .container .about .btn-shop:hover {
+  background: #2a73dd;
+  color: #fff;
+}
+.carousel .container .about .btn-info {
+  background: linear-gradient(120deg, #60a4f4, #2a73dd);
+  padding: 13.5px 44px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 6px #c9d8f4;
+  letter-spacing: 0.03rem;
+  transition: all 0.5s;
+}
+.carousel .container .about .btn-info:hover {
+  background: linear-gradient(120deg, #9dc6f5, #8fb8f5);
+  color: #fff;
+}
+.carousel .thumbnail {
+  width: 50%;
+}
+.carousel .thumbnail img {
+  height: 400px;
+}ousel-slider .lading-swiper .owl-nav button.owl-next:hover {
+  background: none;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-next:hover span {
+  transform: scale(1.5);
+  color: black;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-next span {
+  transition: all 0.5s;
+  display: inline-block;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-prev {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0%;
+  font-size: 60px;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-prev:hover {
+  background: none;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-prev:hover span {
+  transform: scale(1.5);
+  color: black;
+}
+.carousel-slider .lading-swiper .owl-nav button.owl-prev span {
+  transition: all 0.5s;
+  display: inline-block;
+}
+
+.product .container .tittle {
+  font-size: 40px;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.product .container .product-row .adidas-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .nike-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .vans-cate {
+  border: 1px solid none;
+  padding: 15px;
+  background-color: #ae0923;
+  color: #fff;
+  font-size: 20px;
+}
+.product .container .product-row .adidas-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .adidas-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .card-title {
+  font-size: 20px;
+  width: 240.5px !important;
+  height: 48px !important;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .adidas-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .adidas-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
+}
+.product .container .product-row .nike-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .nike-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .nike-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .nike-row .col-12 .container .card .card-title {
+  font-size: 20px;
+}
+.product .container .product-row .nike-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .nike-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .nike-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .nike-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .nike-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
+}
+.product .container .product-row .vans-row .col-12 {
+  margin-top: 15px;
+}
+.product .container .product-row .vans-row .col-12 .container .card {
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+.product .container .product-row .vans-row .col-12 .container .card img {
+  width: 50%;
+  margin: 0 auto;
+}
+.product .container .product-row .vans-row .col-12 .container .card .card-title {
+  font-size: 20px;
+}
+.product .container .product-row .vans-row .col-12 .container .card .card-text {
+  font-size: 16px;
+  text-align: center;
+}
+.product .container .product-row .vans-row .col-12 .container .card .price {
+  color: red;
+  margin-bottom: 10px;
+}
+.product .container .product-row .vans-row .col-12 .container .card:hover {
+  transform: translateY(-20px);
+  box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+}
+.product .container .product-row .vans-row .col-12 .container .card .more-info {
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  font-size: 13px;
+}
+.product .container .product-row .vans-row .col-12 .container .card .more-info a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

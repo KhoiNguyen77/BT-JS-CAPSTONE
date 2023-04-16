@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Cho mảng: arrNumber =
+            [<span id="arrNumber">17, 25, 34, 47, 55, 49, 100, 200, 14</span>]
+        </h3>
+        <hr>
+        <h3>Bài 1: Viết hàm cho phép người dùng nhập giá trị để thêm vào mảng và in ra mảng kết quả sau
+            khi thêm</h3>
+        <p>Nhập vào giá trị</p>
+        <input type="text" class="form-control d-inline w-25" id="nhap-so">
+        <button id="btnThemMang" class="btn btn-succes my-2">Thêm giá trị</button>
+        <div class="alert alert-danger" id="ket-qua-b1"></div>
+        <hr>
+
+        <h3>In ra số lớn nhất trong mảng</h3>
+        <button id="btnInSo" class="btn btn-success">In số lớn nhất</button>
+        <div class="alert alert-danger" id="ket-qua-b2"></div>
+        <hr>
+        <h3>Bài 3: In ra vị trí số bé nhất trong mảng</h3>
+        <button id="btnInViTri" class="btn btn-success">In vị trí số bé nhất</button>
+        <div class="alert alert-danger" id="ket-qua-b3"></div>
+        <hr>
+        <h3>Bài 4: Cho phép người dùng nhập vào giá trị muốn xoá, in ra mảng sau khi xoá nếu có hoặc
+            không tìm thấy giá trị cần xoá</h3>
+        <input type="text" class="form-control my-2 d-inline w-25" id="nhapSoXoa">
+        <button id="btnXoaGiaTri" class="btn btn-danger">Xoá giá trị</button>
+        <div class="alert alert-danger" id="ket-qua-b4"></div>
+        <hr>
+        <h3>Truy xuất thẻ thông qua tagName (tên thẻ)</h3>
+        <section>Content 1</section>
+        <section>Content 2</section>
+        <section>Content 3</section>
+        <hr>
+        <section class="text-content">Text-1</section>
+        <main class="text-content">Text-2</main>
+        <article class="text-content">Text-3</article>
+        <hr>
+        <div class="content">
+            <div name="abc" class="text-content">tag 1</div>
+            <h1 name="abc" class="text-content">tag 2</h1>
+        </div>
+        <hr>
+        <h3>Bài tập 1: Form Login</h3>
+        <form action="" class="form-group">
+            <div class="card w-25 d-block m-auto">
+                <div class="card-header text-center bg-dark text-light">Login</div>
+                <div class="card-body">
+                    <p>Username</p>
+                    <input type="text" class=" form-control" id="username">
+                    <p>Password</p>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-success">Login</button>
+                </div>
+            </div>
+        </form>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
