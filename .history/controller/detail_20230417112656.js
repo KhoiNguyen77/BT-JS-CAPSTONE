@@ -30,28 +30,25 @@ window.onload = function () {
             </div>
             <div class="quantity">
             <button class="btnPlus">+</button>
-            <input type="number" value="1" id="input"/>
+            <p class="number">1</p>
             <button class="btnMinus">-</button>
             </div>
             <div class="addToCart">
               <button class="add">add to cart</button>
             </div>`;
-        const minusButton = document.querySelector(".btnMinus");
-        const plusButton = document.querySelector(".btnPlus");
+        const minusButton = document.querySelector("btnMinus");
+        const plusButton = document.querySelector("btnPlus");
         const inputField = document.querySelector("input");
 
         minusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue > 1) {
-            inputField.value = currentValue - 1;
-          }
+          inputField.value = currentValue - 1;
         });
 
         plusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue >= 1 && currentValue <= product.quantity)
           inputField.value = currentValue + 1;
         });
       })

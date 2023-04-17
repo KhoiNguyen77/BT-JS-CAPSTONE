@@ -43,7 +43,7 @@ window.onload = function () {
         minusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue > 1) {
+          if (currentValue >= 1) {
             inputField.value = currentValue - 1;
           }
         });
@@ -51,7 +51,6 @@ window.onload = function () {
         plusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue >= 1 && currentValue <= product.quantity)
           inputField.value = currentValue + 1;
         });
       })

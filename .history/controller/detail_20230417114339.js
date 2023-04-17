@@ -51,7 +51,7 @@ window.onload = function () {
         plusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue >= 1 && currentValue <= product.quantity)
+          if (currentValue > 1)
           inputField.value = currentValue + 1;
         });
       })

@@ -8,6 +8,7 @@ window.onload = function () {
     })
       .then((resp) => {
         let product = resp.data.content;
+        console.log(product.quantity);
         let buttonSize = ``;
         product.size.forEach((size) => {
           buttonSize += `<button class="button-size">${size}</button>`;
@@ -51,7 +52,7 @@ window.onload = function () {
         plusButton.addEventListener("click", (event) => {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
-          if (currentValue >= 1 && currentValue <= product.quantity)
+          if (currentValue > 1 && currentValue <= product.quantity)
           inputField.value = currentValue + 1;
         });
       })

@@ -54,6 +54,9 @@ window.onload = function () {
           if (currentValue >= 1 && currentValue <= product.quantity)
           inputField.value = currentValue + 1;
         });
+        isClicked = (event) => {
+            
+        }
       })
       .catch((err) => {
         document.querySelector(
