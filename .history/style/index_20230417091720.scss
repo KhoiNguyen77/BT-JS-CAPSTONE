@@ -1,0 +1,284 @@
+@import "./_global.scss";
+@import "./_header.scss";
+
+@import "./_carousel.scss";
+
+.carousel-slider {
+  .lading-swiper {
+    position: relative;
+    .item {
+      height: 500px;
+      background-image: url(../images/image\ 6.png);
+      background-position: center center;
+      background-size: cover;
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .product_img {
+          width: $width-medium;
+          img {
+            width: $width-big;
+            animation: float 6s ease-in-out infinite;
+          }
+        }
+        .product_detail {
+          width: $width-medium;
+          text-align: center;
+          button {
+            @include button(
+              $padding-medium,
+              150px,
+              10px,
+              $bg-c0-orange,
+              none,
+              $text-c0-light,
+              $text-small
+            );
+            transition: all 1s;
+            &:hover {
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+    .owl-dots {
+      position: absolute;
+      bottom: 0%;
+      left: 46%;
+      .owl-dot.active {
+        span {
+          background-color: $bg-c0-dark !important;
+        }
+      }
+    }
+    .owl-nav {
+      position: absolute;
+      top: 40%;
+      width: 100%;
+      button.owl-next {
+        border: 1px solid none;
+        width: 100px;
+        height: 100px;
+        &:hover {
+          background: none;
+        }
+        position: absolute;
+        right: 0%;
+        font-size: $text-2xl;
+        &:hover span {
+          transform: scale(1.5);
+          color: black;
+        }
+        span {
+          transition: all 0.5s;
+          display: inline-block;
+        }
+      }
+      button.owl-prev {
+        width: 100px;
+        height: 100px;
+        &:hover {
+          background: none;
+        }
+        position: absolute;
+        left: 0%;
+        font-size: $text-2xl;
+        &:hover span {
+          transform: scale(1.5);
+          color: black;
+        }
+        span {
+          transition: all 0.5s;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
+
+.product {
+  .container {
+    .tittle {
+      font-size: $text-big;
+      width: $width-medium;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .product-row {
+      .adidas-cate {
+        border: 1px solid none;
+        padding: $padding-medium;
+        background-color: $bg-c0-red;
+        color: $text-c0-light;
+        font-size: $text-medium;
+      }
+      .nike-cate {
+        border: 1px solid none;
+        padding: $padding-medium;
+        background-color: $bg-c0-red;
+        color: $text-c0-light;
+        font-size: $text-medium;
+      }
+      .vans-cate {
+        border: 1px solid none;
+        padding: $padding-medium;
+        background-color: $bg-c0-red;
+        color: $text-c0-light;
+        font-size: $text-medium;
+      }
+      .adidas-row {
+        .col-12 {
+          margin-top: $margin-medium;
+          .container {
+            .card {
+              text-align: center;
+              img {
+                width: $width-medium;
+                margin: 0 auto;
+              }
+              margin: 0 auto;
+              .card-title.name {
+                @media only screen and (max-width: 768px) {
+                }
+                font-size: $text-medium;
+              }
+              .card-text {
+                font-size: $text-small;
+                text-align: center;
+              }
+              .price {
+                color: $text-c0-red;
+                margin-bottom: $margin-small;
+              }
+              transition: all 1s;
+              &:hover {
+                box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+              }
+              .more-info {
+                @include button(
+                  $padding-small,
+                  100px,
+                  10px,
+                  $bg-c0-orange,
+                  none,
+                  $text-c0-light,
+                  $text-smaller
+                );
+                a {
+                  text-decoration: none;
+                  color: $text-c0-light;
+                }
+              }
+            }
+          }
+        }
+      }
+      .nike-row {
+        .col-12 {
+          margin-top: $margin-medium;
+          .container {
+            .card {
+              text-align: center;
+              img {
+                width: $width-medium;
+                margin: 0 auto;
+              }
+              margin: 0 auto;
+              .card-title.name {
+                font-size: $text-medium;
+              }
+              .card-text {
+                font-size: $text-small;
+                text-align: center;
+              }
+              .price {
+                color: $text-c0-red;
+                margin-bottom: $margin-small;
+              }
+              transition: all 1s;
+              &:hover {
+                box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+              }
+              .more-info {
+                @include button(
+                  $padding-small,
+                  100px,
+                  10px,
+                  $bg-c0-orange,
+                  none,
+                  $text-c0-light,
+                  $text-smaller
+                );
+                a {
+                  text-decoration: none;
+                  color: $text-c0-light;
+                }
+              }
+            }
+          }
+        }
+      }
+      .vans-row {
+        .col-12 {
+          margin-top: $margin-medium;
+          .container {
+            .card {
+              text-align: center;
+              img {
+                width: $width-medium;
+                margin: 0 auto;
+              }
+              margin: 0 auto;
+              .card-title.name {
+                text-align: center;
+                font-size: $text-medium;
+              }
+              .card-text {
+                font-size: $text-small;
+                text-align: center;
+              }
+              .price {
+                color: $text-c0-red;
+                margin-bottom: $margin-small;
+              }
+              transition: all 1s;
+              &:hover {
+                box-shadow: -2px 9px 5px 0px rgba(0, 0, 0, 0.15);
+              }
+              .more-info {
+                @include button(
+                  $padding-small,
+                  100px,
+                  10px,
+                  $bg-c0-orange,
+                  none,
+                  $text-c0-light,
+                  $text-smaller
+                );
+                a {
+                  text-decoration: none;
+                  color: $text-c0-light;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-50px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}

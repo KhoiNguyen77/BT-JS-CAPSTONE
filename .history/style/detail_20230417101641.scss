@@ -1,0 +1,84 @@
+@import "./global.scss";
+@import "./header.scss";
+@import "./_carousel.scss";
+
+.selectedItem {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .img_selected {
+      img {
+        width: $width-full;
+      }
+    }
+    .item_info {
+      .price {
+        font-size: $text-big;
+        color: $text-c0-red;
+      }
+      .size {
+        .button-size {
+          margin-right: 15px;
+        }
+        p {
+          font-size: $text-medium;
+        }
+        margin-bottom: 30px;
+        button {
+          text-align: center;
+          @include button(
+            $padding-small,
+            35px,
+            0,
+            $bg-c0-light,
+            1px solid none,
+            $text-c0-dark,
+            $text-smaller
+          );
+        }
+      }
+      .quantity {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: start;
+        align-items: center;
+        button {
+          text-align: center;
+          @include button(
+            $padding-small,
+            30px,
+            0,
+            $bg-c0-dark,
+            none,
+            $text-c0-light,
+            $text-small
+          );
+        }
+        p {
+          margin-bottom: 0px !important;
+          margin: 0px 20px;
+        }
+      }
+      .addToCart {
+        margin-top: 30px;
+        button {
+          @include button(
+            $padding-small,
+            200px,
+            0px,
+            $bg-c0-dark,
+            none,
+            $text-c0-light,
+            $text-small
+          );
+          & :hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

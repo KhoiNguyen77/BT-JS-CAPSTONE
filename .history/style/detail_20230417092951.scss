@@ -1,0 +1,37 @@
+@import "./global.scss";
+@import "./header.scss";
+@import "./_carousel.scss";
+
+.selectedItem {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .size {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      margin: 20px 0;
+    }
+    .quantity {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+    .addToCart {
+      margin-top: 30px;
+      button {
+        @include button(
+          $padding-small,
+          100px,
+          10px,
+          $bg-c0-orange,
+          none,
+          $text-c0-light,
+          $text-smaller
+        );
+      }
+    }
+  }
+}
