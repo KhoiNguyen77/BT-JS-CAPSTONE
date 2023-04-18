@@ -36,7 +36,7 @@ window.onload = function () {
             <div class="addToCart">
               <button class="add">Add to cart</button>
             </div>`;
-        // Tăng giảm item
+            // Tăng giảm item
         const minusButton = document.querySelector(".btnMinus");
         const plusButton = document.querySelector(".btnPlus");
         const inputField = document.querySelector("input");
@@ -53,18 +53,17 @@ window.onload = function () {
           event.preventDefault();
           const currentValue = Number(inputField.value) || 0;
           if (currentValue >= 1 && currentValue <= product.quantity)
-            inputField.value = currentValue + 1;
+          inputField.value = currentValue + 1;
         });
         // Highlight size giày được chọn
         const listSizeButton = document.querySelectorAll(".button-size");
-        listSizeButton.forEach((size) => {
+        console.log(listSizeButton);
+        listSizeButton.forEach((size, index) => {
           size.addEventListener("click", function () {
-            listSizeButton.forEach((size) => {
-              size.classList.remove("activeButton");
-            });
-            size.classList.add("activeButton");
-          });
-        });
+            size.remove("activeButton");
+            size.classList.add("activeButton")
+          })
+        })
       })
       .catch((err) => {
         document.querySelector(

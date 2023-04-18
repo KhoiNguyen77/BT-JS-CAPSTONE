@@ -86,8 +86,14 @@ footer p {
   justify-content: space-between;
   align-items: center;
 }
+.selectedItem .container .img_selected {
+  width: 50%;
+}
 .selectedItem .container .img_selected img {
-  width: 100%;
+  width: 75%;
+}
+.selectedItem .container .item_info {
+  width: 50%;
 }
 .selectedItem .container .item_info .price {
   font-size: 40px;
@@ -201,4 +207,9 @@ footer p {
 .related .container .item-row .col-12 .container .card .more-info a {
   text-decoration: none;
   color: #fff;
+}
+
+.button-size.activeButton {
+  background-color: #000 !important;
+  color: #fff !important;
 }

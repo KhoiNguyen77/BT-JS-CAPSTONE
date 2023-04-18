@@ -11,7 +11,7 @@
     .img_selected {
       width: $width-medium;
       img {
-        width: $width-big;
+        width: $width-full;
       }
     }
     .item_info {
@@ -105,9 +105,4 @@
       @import "./row";
     }
   }
-}
-
-.button-size.activeButton {
-  background-color: $bg-c0-dark !important;
-  color: $text-c0-light !important;
 }
