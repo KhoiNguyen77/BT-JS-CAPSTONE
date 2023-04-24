@@ -1,17 +1,21 @@
 header {
-  background-color: $bg-c0-dark;
+  background-color: $bg-c0-dark ;
+
   nav {
     .container {
       .navbar-brand {
         img {
-          width: 120px !important ;
+          width: 120px !important;
         }
       }
+
       .navbar-toggler {
         color: $text-c0-light !important;
       }
+
       .collapse {
         flex-grow: 0 !important;
+
         .navbar-nav {
           .nav-item {
             .nav-link {
