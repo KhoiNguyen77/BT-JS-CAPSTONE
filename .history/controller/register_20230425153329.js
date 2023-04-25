@@ -41,6 +41,7 @@ document.querySelector('#registerSub').onclick = function () {
         console.log(res);
         window.alert("Register Successful !")
     }).catch(err => {
-        window.alert(err.response.data.message)
+        console.log(err.response.data.message);
+        window.alert("Register Failed !")
     })
 }

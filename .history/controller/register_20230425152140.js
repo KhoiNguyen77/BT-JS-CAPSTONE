@@ -38,9 +38,8 @@ document.querySelector('#registerSub').onclick = function () {
         method: 'POST',
         data: usersNew
     }).then(res => {
-        console.log(res);
         window.alert("Register Successful !")
     }).catch(err => {
-        window.alert(err.response.data.message)
+        window.alert("Register Failed !")
     })
 }

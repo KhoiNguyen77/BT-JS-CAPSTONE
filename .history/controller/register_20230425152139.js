@@ -22,10 +22,10 @@ document.querySelector('#registerSub').onclick = function () {
         usersNew[id] = value;
     }
     for (let input of arrayPass) {
-        let { id, value } = input;
+        let {id, value} = input;
         usersNew[id] = value;
     }
-
+    
     usersNew["gender"] = booleanGender;
     console.log("user", usersNew);
     console.log(usersNew.phone);
@@ -38,9 +38,8 @@ document.querySelector('#registerSub').onclick = function () {
         method: 'POST',
         data: usersNew
     }).then(res => {
-        console.log(res);
         window.alert("Register Successful !")
-    }).catch(err => {
-        window.alert(err.response.data.message)
+    }).catch( err => {
+        window.alert("Register Failed !")
     })
 }
