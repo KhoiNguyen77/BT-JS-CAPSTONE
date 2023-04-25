@@ -23,16 +23,14 @@ function checkEmail(value, name) {
 
 }
 function duplicatePass(value, name) {
-    let password = document.querySelector("#passConfirm");
-    console.log(password.value);
-    if (value !== password.value || password.value === "") {
-        document.querySelector(`.${name}`).classList.add("text-danger")
-        document.querySelector(`.${name}`).innerHTML = `Password doesn't match !`;
-        return false;
-    }
-    else if (value === password.value) {
-        document.querySelector(`.${name}`).innerHTML = "";
+    let password = document.getElementById("#passConfirm");
+    if (value === password) {
         return true
+    } else {
+        let err = document.querySelector(`.${name}`);
+        err.classList.add("text-danger")
+        err.innerHTML = `Password doesn't match !`;
+        return false;
     }
 }
 function checkNumber(value, name) {
@@ -72,12 +70,9 @@ function checkGender(value, name) {
     if (value == undefined) {
         let err = document.querySelector(`.${name}`);
         err.classList.add("text-danger");
-        err.innerHTML = ("Please select your gender !");
+        err.innerHTML("Please select your gender !");
         return false
-    } else {
-        document.querySelector(`.${name}`).innerHTML = "";
-        return true;
-    }
+    } else return true;
 }
 
 function checkValid(obj) {

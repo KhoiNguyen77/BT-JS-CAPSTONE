@@ -22,21 +22,10 @@ function checkEmail(value, name) {
 
 
 }
-function duplicatePass(value, name) {
-    let password = document.querySelector("#passConfirm");
-    console.log(password.value);
-    if (value !== password.value || password.value === "") {
-        document.querySelector(`.${name}`).classList.add("text-danger")
-        document.querySelector(`.${name}`).innerHTML = `Password doesn't match !`;
-        return false;
-    }
-    else if (value === password.value) {
-        document.querySelector(`.${name}`).innerHTML = "";
-        return true
-    }
-}
+
 function checkNumber(value, name) {
 
+    console.log(value);
     let regexNumber = /^[0-9]+$/;
     if (regexNumber.test(value)) {
         document.querySelector(`#error-regex-${name}`).innerHTML = '';
@@ -68,17 +57,6 @@ function checkPassword(value, name) {
     document.querySelector(`#error-regex-${name}`).innerHTML = `${name} need  !`;
     return false;
 }
-function checkGender(value, name) {
-    if (value == undefined) {
-        let err = document.querySelector(`.${name}`);
-        err.classList.add("text-danger");
-        err.innerHTML = ("Please select your gender !");
-        return false
-    } else {
-        document.querySelector(`.${name}`).innerHTML = "";
-        return true;
-    }
-}
 
 function checkValid(obj) {
     let valid = true;
@@ -88,10 +66,8 @@ function checkValid(obj) {
         checkEmpty(obj.name, 'Name') &
         checkEmpty(obj.phone, 'Phone');
 
-    valid = valid & checkEmail(obj.email, 'Email');
-    valid = valid & checkNumber(parseInt(obj.phone), 'Phone');
-    valid = valid & checkText(obj.name, 'Name');
-    valid = valid & checkGender(obj.gender, "gender-error")
-    valid = valid & duplicatePass(obj.password, "error-duplicate-password")
+    valid += valid & checkEmail(obj.email, 'Email');
+    valid += valid & checkNumber(parseInt(obj.phone), 'Phone');
+    valid += valid & checkText(obj.name, 'Name');
     return valid;
 }

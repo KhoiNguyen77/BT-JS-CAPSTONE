@@ -24,15 +24,15 @@ function checkEmail(value, name) {
 }
 function duplicatePass(value, name) {
     let password = document.querySelector("#passConfirm");
-    console.log(password.value);
-    if (value !== password.value || password.value === "") {
+    // let password = document.getElementById("#passConfirm");
+    // console.log(password.value);
+    if (value === password.value || password.valud === null) {
+        document.querySelector(`.${name}`).innerHTML = "";
+        return true
+    } else {
         document.querySelector(`.${name}`).classList.add("text-danger")
         document.querySelector(`.${name}`).innerHTML = `Password doesn't match !`;
         return false;
-    }
-    else if (value === password.value) {
-        document.querySelector(`.${name}`).innerHTML = "";
-        return true
     }
 }
 function checkNumber(value, name) {
