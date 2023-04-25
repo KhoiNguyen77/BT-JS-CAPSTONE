@@ -43,7 +43,7 @@ getAdidas = () => {
     .then((resp) => {
       let listAdidas = resp.data.content;
       let output = "";
-      listAdidas.forEach((shoe) => {
+      listAdidas.forEach((shoe, index) => {
         output += `            <div class="col-12 col-lg-4">
         <div class="container">
           <div class="card">
@@ -113,7 +113,7 @@ getVans = () => {
     .then((resp) => {
       let listVans = resp.data.content;
       let output = "";
-      listVans.forEach((shoe) => {
+      listVans.forEach((shoe, index) => {
         output += `            <div class="col-12 col-lg-4">
         <div class="container">
           <div class="card">
