@@ -112,14 +112,15 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
   transform: scale(1.2);
 }
 
+.err {
+  font-size: 14px;
+}
+
 .form__group {
   position: relative;
   padding: 15px 0 0;
   margin-top: 10px;
   width: 80%;
-}
-.form__group .err {
-  font-size: 14px;
 }
 
 .form__field {
@@ -172,36 +173,4 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
 /* reset input */
 .form__field:required, .form__field:invalid {
   box-shadow: none;
-}
-
-h3 {
-  font-size: 25px;
-}
-
-footer {
-  margin-top: 50px;
-}
-footer h3 {
-  font-size: 12px;
-}
-footer li {
-  list-style: none;
-  cursor: pointer;
-}
-footer li a {
-  text-decoration: none;
-  color: gray;
-  cursor: pointer;
-  font-size: 12px;
-}
-footer p {
-  color: gray;
-  font-size: 12px;
-}
-footer .learn {
-  text-decoration: none;
-  color: red;
-}
-footer .info {
-  background-color: rgb(236, 236, 236);
 }

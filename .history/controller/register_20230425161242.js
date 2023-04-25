@@ -27,11 +27,9 @@ document.querySelector('#registerSub').onclick = function () {
     }
 
     usersNew["gender"] = booleanGender;
-
-
+    console.log("user", usersNew);
     console.log(usersNew.phone);
-    if (!checkValid(usersNew)) return;
-
+     if (!checkValid(usersNew)) return;
 
 
 

@@ -14,49 +14,13 @@ function checkEmail(value, name) {
 
     let regexEmail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if (regexEmail.test(value)) {
-        document.querySelector(`#error-required-${name}`).innerHTML = '';
+        document.querySelector(`#error-regex-${name}`).innerHTML = '';
         return true;
     }
-    document.querySelector(`#error-required-${name}`).innerHTML = `Please enter correct ${name} !`;
+    document.querySelector(`#error-regex-${name}`).innerHTML = `Please enter correct Email !`;
     return false;
 
 
-}
-
-function checkNumber(value, name) {
-
-    let regexNumber = /^[0-9]+$/;
-    if (regexNumber.test(value)) {
-
-        document.querySelector(`#error-required-${name}`).innerHTML = '';
-        return true;
-    }
-    else {
-        document.querySelector(`#error-required-${name}`).innerHTML = `Please enter correct ${name} number !`;
-        return false;
-    }
-
-}
-
-function checkText(value, name) {
-    let regexLetter = /^[A-Za-z\s]+$/;;
-    if (regexLetter.test(value)) {
-        document.querySelector(`#error-required-${name}`).innerHTML = '';
-        return true;
-    }
-    document.querySelector(`#error-required-${name}`).innerHTML = `Please enter correct ${name} !`;
-    return false;
-}
-
-function checkPassword(value, name) {
-    let regexPass = /^[A-Za-z]\w{6,10}$/;
-    if (regexPass.test(value)) {
-        document.querySelector(`#error-required-${name}`).innerHTML = '';
-        return true;
-    }
-    document.querySelector(`#error-required-${name}`).innerHTML = `
-    ${name} need 6 to 10 characters,one uppercase and one lowercase letter!`;
-    return false;
 }
 function duplicatePass(value, name) {
     let password = document.querySelector("#passConfirm");
@@ -71,9 +35,39 @@ function duplicatePass(value, name) {
         return true
     }
 }
+function checkNumber(value, name) {
 
+    let regexNumber = /^[0-9]+$/;
+    if (regexNumber.test(value)) {
+        document.querySelector(`#error-regex-${name}`).innerHTML = '';
+        return true;
+    }
+    else {
+        document.querySelector(`#error-regex-${name}`).innerHTML = `Please enter correct ${name} number !`;
+        return false;
+    }
 
+}
 
+function checkText(value, name) {
+    let regexLetter = /^[A-Za-z\s]+$/;;
+    if (regexLetter.test(value)) {
+        document.querySelector(`#error-regex-${name}`).innerHTML = '';
+        return true;
+    }
+    document.querySelector(`#error-regex-${name}`).innerHTML = `Please enter correct ${name} !`;
+    return false;
+}
+
+function checkPassword(value, name) {
+    let regexPass = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,10}$/;
+    if (regexPass.test(value)) {
+        document.querySelector(`#error-regex-${name}`).innerHTML = '';
+        return true;
+    }
+    document.querySelector(`#error-regex-${name}`).innerHTML = `${name} need  !`;
+    return false;
+}
 function checkGender(value, name) {
     if (value == undefined) {
         let err = document.querySelector(`.${name}`);
@@ -86,10 +80,6 @@ function checkGender(value, name) {
     }
 }
 
-
-
-
-
 function checkValid(obj) {
     let valid = true;
 
@@ -99,9 +89,9 @@ function checkValid(obj) {
         checkEmpty(obj.phone, 'Phone');
 
     valid = valid & checkEmail(obj.email, 'Email');
-    valid = valid & checkNumber(parseInt(obj.phone), 'Phone')
+    valid = valid & checkNumber(parseInt(obj.phone), 'Phone');
     valid = valid & checkText(obj.name, 'Name');
     valid = valid & checkGender(obj.gender, "gender-error")
-    valid = valid & duplicatePass(obj.password, "error-duplicate-password") & checkPassword(obj.password, 'Password');
+    valid = valid & duplicatePass(obj.password, "error-duplicate-password")
     return valid;
 }

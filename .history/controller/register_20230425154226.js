@@ -27,12 +27,10 @@ document.querySelector('#registerSub').onclick = function () {
     }
 
     usersNew["gender"] = booleanGender;
-
-
+    console.log("user", usersNew);
     console.log(usersNew.phone);
-    if (!checkValid(usersNew)) return;
-
-
+    //  if (!checkValid(usersNew)) return;
+    
 
 
     let promise = axios({
@@ -41,7 +39,7 @@ document.querySelector('#registerSub').onclick = function () {
         data: usersNew
     }).then(res => {
         console.log(res);
-        window.alert(res.data.message)
+        window.alert("Register Successful !")
     }).catch(err => {
         window.alert(err.response.data.message)
     })

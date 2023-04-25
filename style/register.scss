@@ -49,6 +49,9 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
     transform: scale(1.2)
 }
 
+.err {
+    font-size: 14px;
+}
 
 //--------------form input------------------------
 .form__group {
@@ -57,9 +60,7 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
     margin-top: 10px;
     width: 80%;
 
-    .err {
-        font-size: 14px;
-    }
+
 }
 
 .form__field {
@@ -118,52 +119,5 @@ header nav .container .collapse .navbar-nav .nav-item .nav-link:hover {
     &:required,
     &:invalid {
         box-shadow: none;
-    }
-}
-
-
-
-
-
-
-
-
-
-//--------------footer-----------------------
-h3 {
-    font-size: 25px;
-}
-
-footer {
-    margin-top: 50px;
-
-    h3 {
-        font-size: 12px;
-    }
-
-    li {
-        list-style: none;
-        cursor: pointer;
-
-        a {
-            text-decoration: none;
-            color: gray;
-            cursor: pointer;
-            font-size: 12px;
-        }
-    }
-
-    p {
-        color: gray;
-        font-size: 12px;
-    }
-
-    .learn {
-        text-decoration: none;
-        color: red;
-    }
-
-    .info {
-        background-color: rgb(236 236 236);
     }
 }

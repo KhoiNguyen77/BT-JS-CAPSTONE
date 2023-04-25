@@ -65,7 +65,7 @@ getAdidas = () => {
         document.querySelector(".adidas-row").innerHTML = output;
       });
     })
-    .catch((err) => { });
+    .catch((err) => {});
 };
 
 getAdidas();
@@ -100,7 +100,7 @@ getNike = () => {
         document.querySelector(".nike-row").innerHTML = output;
       });
     })
-    .catch((err) => { });
+    .catch((err) => {});
 };
 
 getNike();
