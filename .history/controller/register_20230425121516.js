@@ -35,10 +35,8 @@ document.querySelector('#registerSub').onclick = function () {
 
     promise.then(function (ketQua) {
         console.log(ketQua.data);
-        window.alert("Register successful !")
     });
     promise.catch(function (err) {
         console.log('err', err);
-        window.alert("Register Failed !");
     })
 }
