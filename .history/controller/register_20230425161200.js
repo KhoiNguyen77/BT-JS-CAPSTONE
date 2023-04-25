@@ -39,7 +39,7 @@ document.querySelector('#registerSub').onclick = function () {
         data: usersNew
     }).then(res => {
         console.log(res);
-        window.alert(res.data.message)
+        window.alert(res.response.data.message)
     }).catch(err => {
         window.alert(err.response.data.message)
     })
