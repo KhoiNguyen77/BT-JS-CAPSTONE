@@ -85,6 +85,7 @@
 
                                 <input class="form__field" placeholder="Password confirm" id='passConfirm' required />
                                 <label for="passConfirm" class="form__label">Password confirm</label>
+                                <p id="error-Password" class="text text-danger err"></p>
                             </div>
 
                         </div>
@@ -93,7 +94,7 @@
                             <input type="input" class="form__field" placeholder="Name" name="name" id='name' required />
                             <label for="name" class="form__label">Name</label>
                             <p id="error-required-Name" class="text text-danger err"></p>
-                            <p id="error-regex-Name" class="text text-danger err"></p>
+
 
                         </div>
                         <div class=" form__group field">
@@ -101,30 +102,30 @@
                                 required />
                             <label for="phone" class="form__label">Phone Number</label>
                             <p id="error-required-Phone" class="text text-danger err"></p>
-                            <p id="error-regex-Phone" class="text text-danger err"></p>
+
                         </div>
 
 
                         <div class="row px-2 mt-2">
                             <p class="col-sm-2 col-md-2">Gender</p>
-                            <form>
-                                <!-- <div class="form-check col-sm-2 col-md-2">
-                                    <input class="form-check-input" type="radio" name="gender" id="male">
+                            <form class="row col-sm-2">
+
+                                <div class="form-check col-sm-2 col-md-2">
+                                    <input name="gender" class="form-check-input" type="radio" value="m" id="male" />
                                     <label class="form-check-label" for="male">
                                         Male
                                     </label>
+
                                 </div>
                                 <div class="form-check col-sm-2 col-md-2">
-                                    <input class="form-check-input" type="radio" name="gender" id="female">
+                                    <input name="gender" class="form-check-input" type="radio" value="f" id="female" />
                                     <label class="form-check-label" for="female">
                                         Female
                                     </label>
-                                </div> -->
-                                <input name="gender" type="radio" value="m" id="male" /> Male
-                                <input name="gender" type="radio" value="f" id="female" /> Female
 
-
+                                </div>
                             </form>
+                            <p id="error-Gender" class="text text-danger err"></p>
                         </div>
                         <button type="button" class="btn btn-primary w-50 mt-3" id="registerSub">Submit</button>
                     </div>

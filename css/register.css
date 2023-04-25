@@ -186,6 +186,7 @@ footer h3 {
 }
 footer li {
   list-style: none;
+  cursor: pointer;
 }
 footer li a {
   text-decoration: none;
